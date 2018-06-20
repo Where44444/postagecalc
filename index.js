@@ -127,7 +127,7 @@ function computeOperation(response, op, weight) {
 	}
 
 	// Set up a JSON object of the values we want to pass along to the EJS result page
-	var params = {operation: op, left: left, result: result};
+	var params = {operation: op, weight: weight, result: result};
 
 	// Render the response, using the EJS page "result.ejs" in the pages directory
 	// Makes sure to pass it the parameters we need.
